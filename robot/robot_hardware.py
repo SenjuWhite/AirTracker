@@ -12,8 +12,8 @@ from adafruit_ads1x15.analog_in import AnalogIn
 import adafruit_mpu6050
 from gpiozero import OutputDevice, CPUTemperature
 
-HARDWARE_TOKEN = os.environ.get("HARDWARE_TOKEN", "aa344fa74ff2723kg99cxfnn1csfgiu41")
-BACKEND_WS_URL = os.environ.get("BACKEND_WS_URL", "ws://192.168.178.93:5280")
+HARDWARE_TOKEN = os.environ.get("HARDWARE_TOKEN", "")
+BACKEND_WS_URL = os.environ.get("BACKEND_WS_URL", "")
 CONTROL_URI = f"{BACKEND_WS_URL}/api/robots/control?token={HARDWARE_TOKEN}"
 
 current_state = "stop"
